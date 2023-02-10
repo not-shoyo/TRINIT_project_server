@@ -16,6 +16,10 @@ app.get("/getSizeFromUrl", (req, res) => {
   }).then((result) => res.json({ resultSize: result }));
 });
 
+app.get("/", (req, res) => {
+  res.status("dfukf");
+});
+
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
